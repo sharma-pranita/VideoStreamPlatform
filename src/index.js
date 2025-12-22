@@ -1,5 +1,6 @@
 
 import dotenv from "dotenv";
+import { app } from "./app.js";
 dotenv.config()
 console.log(process.env.MONGODB_URL);
 
