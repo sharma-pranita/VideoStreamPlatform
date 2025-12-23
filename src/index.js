@@ -1,10 +1,13 @@
 
 import dotenv from "dotenv";
-import { app } from "./app.js";
-dotenv.config()
-console.log(process.env.MONGODB_URL);
 
+dotenv.config()
+import "./utils/cloudinary.js"
+
+import { app } from "./app.js";
 import connectDB from "./db/index.js";
+
+
 
 connectDB()
 .then(()=>{
